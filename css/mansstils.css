@@ -3,7 +3,7 @@ body {
   font-family: "Lato", sans-serif;
   background: url("https://img.freepik.com/free-vector/blurred-bokeh-pattern-wallpaper-soft-touch-your-walls_1017-43483.jpg?semt=ais_hybrid") no-repeat center center fixed; /* Šeit ievieto savu fona attēla faila nosaukumu */
   background-size: cover;
-  color: black; /* Pielāgots, lai teksts labi izskatītos uz gaiša fona */
+  color: #003366; /* Tumši zils teksts */
   margin: 0;
   padding: 0;
 }
@@ -13,17 +13,19 @@ body {
   background: rgba(255, 255, 255, 0.6); /* Caurspīdīgs balts fons */
   padding: 20px;
   border-radius: 10px;
+  color: #003366; /* Tumši zils teksts šajās sadaļās */
 }
 
 /* Navigācijas josla */
 .w3-bar {
-  background: rgba(255, 255, 255, 0.8); /* Mazliet mazāk caurspīdīgs balts fons */
+  background-color: #003366; /* Tumši zils fons */
+  color: white; /* Baltas krāsas teksts uz tumši zilā fona */
 }
 
-/* Navigācijas pogas - TAGAD PILNĪGI BALTAS */
+/* Navigācijas pogas - teksts ir ļoti tumši zils uz baltā fona */
 .w3-bar .w3-button {
   background-color: white; /* Balta poga */
-  color: black; /* Melns teksts uz baltā fona */
+  color: #003366; /* Tumši zils teksts uz pogas */
   border-radius: 5px;
   width: auto; /* Nodrošina, ka visas pogas ir vienāda platuma */
   padding: 10px 20px; /* Vienmērīgs iekšējais attālums */
@@ -35,21 +37,23 @@ body {
   width: auto; /* Tāds pats platums kā citām pogām */
 }
 
-/* Navigācijas pogas, kad peles kursors ir virs tām */
-.w3-bar .w3-button:hover {
-  background-color: #f1f1f1; /* Gaiši pelēks efekts peles uzbraukšanai */
+/* Navigācijas josla */
+.w3-bar {
+  background-color: #003366 !important; /* Tumši zils fons, ar "important", lai apstiprinātu šo stilu */
+  color: white; /* Balts teksts uz tumši zilā fona */
 }
 
 
+/* Attēli */
 .w3-image {
   max-width: 100%;
   border: 5px solid white;
   border-radius: 5px;
 }
 
-
+/* Saturam centrs */
 .w3-content {
   text-align: center;
   padding: 20px;
+  color: #003366; /* Tumši zils teksts šajā sadaļā */
 }
-

@@ -27,8 +27,8 @@
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="More">ATTĒLU APSTRĀDE <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">RAKSTA GRAFIKA</a>
-        <a href="#" class="w3-bar-item w3-button">VEKTORGRAFIKA</a>
+        <a href="#image-processing" class="w3-bar-item w3-button">RAKSTA GRAFIKA</a>
+        <a href="#vector-graphics" class="w3-bar-item w3-button">VEKTORGRAFIKA</a>
       </div>
     </div>
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
@@ -41,6 +41,7 @@
   <a href="#3d-modeling" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">3D MODELĒŠANA</a>
   <a href="#video" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VIDEO</a>
   <a href="#spreadsheet" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">IZKLĀJLAPAS</a>
+  <a href="#image-processing" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ATTĒLU APSTRĀDE</a>
 </div>
 
 <!-- Page content -->
@@ -48,18 +49,45 @@
 
   <!-- Introduction Section -->
   <div class="w3-container w3-padding-64" id="introduction">
-    <h1 class="w3-wide">Rafaelas portfolio</h1>
+    <h1 class="w3-wide" style="font-size: 4em; font-weight: bold; text-align: center;">Rafaelas portfolio</h1>
     <p class="w3-opacity"><i>Rīgas Valsts 1. ģimnāzija</i></p>
-    <h4 class="w3-justify">Šeit Jūs varēsiet apskatīt visus manus darbus, kurus veicu datorikā 10. klasē, tostarp tekstapstrādi, attēlu apstrādi, 3D modelēšanu, video, izklājlapas un daudz ko citu.</h4>
-  </div>
+    <h4 class="custom-h4">Šeit Jūs varēsiet apskatīt visus manus darbus, kurus veicu datorikā 10. klasē, tostarp tekstapstrādi, attēlu apstrādi, 3D modelēšanu, video, izklājlapas un daudz ko citu.</h4>
+</div>
+<!-- Pievieno CSS -->
+<style>
+  .custom-h4 {
+    text-align: center;  /* Centra tekstu horizontāli */
+    margin: 0 auto;      /* Nodrošina, ka teksts paliek centrēts */
+  }
+</style>
 
   <!-- Tekstapstrāde -->
   <div class="w3-container w3-padding-64" id="text-processing">
     <h2>Tekstapstrāde</h2>
-    <h4> (Word) </h4>
-    <img src="Images/text-processing.jpg" alt="Text Processing" class="w3-image">
-    <p class="w3-justify">Šajā sadaļā ir parādīti daži no maniem tekstapstrādes darbiem, ko veicu datorikas stundās.</p>
-  </div>
+     <h4> (Word) </h4>
+    <div class="w3-row">
+      <div class="w3-half">
+        <img src="images/wordss.png" alt="" style= "width: 70%"/>
+      </div>
+      <div class="w3-half">
+         <img src="images/chiwawa.png" alt=""style= "width: 60%"/>
+        
+      </div>
+    </div>
+   
+    
+   
+   <p class="w3-justify custom-text">Tekstapstrāde ir process, kurā tiek izveidoti, rediģēti, formatēti un saglabāti teksta dokumenti, izmantojot speciālas programmas, piemēram, Microsoft Word vai Google Docs. Šī darbība ļauj lietotājiem viegli mainīt tekstu, piemēram, pievienot, dzēst, pārvietot vai formatēt rakstus dažādos veidos. Tekstapstrāde tiek plaši izmantota gan profesionālajā, gan ikdienas darbā. Šajā sadaļā ir parādīti daži no maniem tekstapstrādes darbiem, ko veicu datorikas stundās.</p>
+</div>
+
+<!-- Pievieno CSS -->
+<style>
+  .custom-text {
+    max-width: 800px; /* Teksta platuma ierobežojums */
+    margin: 0 auto;   /* Centrs horizontāli */
+    text-align: justify; /* Lai saglabātu izkārtojumu, kas atbilst jūsu sākotnējam "w3-justify" stilam */
+  }
+</style>
 
   <!-- Attēlu apstrāde -->
   <div class="w3-container w3-padding-64" id="image-processing">
@@ -72,14 +100,15 @@
         
         <img src="gimp1.png" alt="Rastra grafika" class="w3-image"/>
         <img src="konca.png" alt=""/>
-        
+        <img src="images/privatiedati.gif" alt="" style= "width: 90%"/>
       </div>
       <div class="w3-half">
         <h3>Vektorgrafika</h3>
         <h4> (Inkscape) </h4>
         <h4> Vektorgrafikā jeb objektorientētā grafikā attēlu veido no taisnēm un līknēm. Attēlu veidojošos objektus apraksta ar matemātisku formulu palīdzību. Attēlā var atlasīt un apstrādāt tikai visu objektu, piemēram, taisni vai riņķi. </h4>
 
-        <img src="sunnails.png" alt="Vektorgrafika" class="w3-image"/>
+        <img src="sunnails.png" alt="Vektorgrafika" class="w3-image" style= "width: 40%"/>
+        <img src="images/inkskapins.png" alt=""/>
       </div>
     </div>
   </div>
@@ -89,7 +118,7 @@
     <h2>3D Modelēšana</h2>
     <img src="wrobot.png" alt="3D Cube" class="w3-image">
     
-    <p>Šajā sadaļā varat apskatīt dažus no maniem 3D modeļiem, piemēram, 3D kuba skaldni.</p>
+    <p>Šajā sadaļā varat apskatīt dažus no maniem 3D modeļiem, piemēram, 3D kuba skaldni. 3D modelēšana ir process, kurā tiek izveidoti trīsdimensiju objekti datorā, izmantojot specializētas programmas, piemēram, Blender vai AutoCAD. Šie modeļi tiek izmantoti dažādās jomās, piemēram, spēļu izstrādē, arhitektūrā, animācijā un ražošanā. 3D modelēšana ļauj radīt detalizētus un reālistiskus attēlus, kas var tikt izmantoti gan vizualizācijām, gan reālai produkcijas izveidei.</p>
   </div>
 
   <!-- Video -->
@@ -99,30 +128,21 @@
       
       <iframe src="https://eduriga-my.sharepoint.com/personal/rburmeistere2_edu_riga_lv/_layouts/15/embed.aspx?UniqueId=101de8e2-cbbb-43d2-be32-d3db4a579535&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Datorika 24.mp4"></iframe>
     
-    <p>Šis ir video par reklāmas suvenīra izveidi.</p>
+    <p>Šis ir video par reklāmas suvenīra izveidi. Video tika veidots ar aplikāciju Capcut, kurā tika izmantota mūzika no youtube un tiktoka.</p>
   </div>
 
   <!-- Izklājlapas -->
   <div class="w3-container w3-padding-64" id="spreadsheet">
     <h2>Izklājlapas</h2>
-    <p>Šeit ir piemēri no izklājlapām, kuras esmu veidojis datorikas stundās. Šī tika veidotas ar excel.</p>
+    <p>Šeit ir piemēri no izklājlapām, kuras esmu veidojis datorikas stundās. Šī tika veidotas ar excel. Izklājlapas ir programmas, piemēram, Microsoft Excel vai Google Sheets, kas ļauj organizēt, analizēt un aprēķināt datus, izmantojot rindas, kolonnas un formulas. Tās tiek plaši izmantotas, lai veidotu tabulas, grafikus un veiktu matemātiskus aprēķinus dažādās jomās, piemēram, finansēs un zinātnē. Izklājlapas ir svarīgas arī datu vizualizācijai un lēmumu pieņemšanai.</p>
     
     <img src="izkllapas1.png" alt="Izklājlapas piemērs" class="w3-image"/>
-    <img src="izkllapas2.png" alt="Izklājlapas piemērs" class="w3-image"/>
+    <img src="izkllapas2.png" alt="Izklājlapas piemērs" class="w3-image" style= "width: 100%"/>
   </div>
 
 </div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+
 
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button

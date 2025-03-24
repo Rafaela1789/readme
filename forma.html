@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formas</title>
+    <link href="css/stils.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Formas un ievadlauku piemērs</h1>
+    <form>
+        <p>Šodienas datums <input name="datums"></p>
+        <p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
+            <input onclick="datums.value=new Date();" name="poga" value="DATUMS" type="button">
+        </p>
+        <p>Ja gribi izdzēst datumua lodziņa saturu, spied pogu RESET
+            <input value="RESET" type="reset">
+        </p>
+    </form>
+    
+    <!-- Otrā forma ar saskaitīšanas, atņemšanas, dalīšanas un reset pogām -->
+    <form>
+        <div>1.skaitlis<input type="text" id="sk1" name="sk1"> </div>
+        <div>2.skaitlis<input type="text" id="sk2" name="sk2"> </div>
+        
+        <div>
+            <input value="Saskaitīt" name="saskaitit" onclick="rez.value = Number(sk1.value) + Number(sk2.value)" type="button">
+            <input value="Atņemt" name="atnemt" onclick="rez.value = Number(sk1.value) - Number(sk2.value)" type="button">
+            <input value="Reizināt" name="reiz" onclick="rez.value = Number(sk1.value) * Number(sk2.value)" type="button">
+            <input value="Dalīt" name="dalit" onclick="rez.value = Number(sk1.value) / Number(sk2.value)" type="button">
+            <input value="RESET" type="reset" onclick="rez.value=''" /> <!-- Reset pogas funkcionalitāte -->
+        </div>
+        
+        <hr>
+        <div>Rezultāts <input name="rez" readonly> </div> <!-- Pievienots readonly, lai lietotājs nevarētu manuāli mainīt rezultātu -->
+    </form>
+</body>
+</html>
