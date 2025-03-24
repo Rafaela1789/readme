@@ -40,14 +40,14 @@ body {
   background-color: #f1f1f1; /* Gaiši pelēks efekts peles uzbraukšanai */
 }
 
-/* Attēlu stilizācija */
+
 .w3-image {
   max-width: 100%;
   border: 5px solid white;
   border-radius: 5px;
 }
 
-/* Sadaļas centrētas, lai saturs būtu harmoniski izvietots */
+
 .w3-content {
   text-align: center;
   padding: 20px;
