@@ -1,0 +1,55 @@
+/* Vispārīgie stila iestatījumi */
+body {
+  font-family: "Lato", sans-serif;
+  background: url("https://img.freepik.com/free-vector/blurred-bokeh-pattern-wallpaper-soft-touch-your-walls_1017-43483.jpg?semt=ais_hybrid") no-repeat center center fixed; /* Šeit ievieto savu fona attēla faila nosaukumu */
+  background-size: cover;
+  color: black; /* Pielāgots, lai teksts labi izskatītos uz gaiša fona */
+  margin: 0;
+  padding: 0;
+}
+
+/* Pārliecināmies, ka teksts ir labi salasāms uz fona */
+.w3-container {
+  background: rgba(255, 255, 255, 0.6); /* Caurspīdīgs balts fons */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Navigācijas josla */
+.w3-bar {
+  background: rgba(255, 255, 255, 0.8); /* Mazliet mazāk caurspīdīgs balts fons */
+}
+
+/* Navigācijas pogas - TAGAD PILNĪGI BALTAS */
+.w3-bar .w3-button {
+  background-color: white; /* Balta poga */
+  color: black; /* Melns teksts uz baltā fona */
+  border-radius: 5px;
+  width: auto; /* Nodrošina, ka visas pogas ir vienāda platuma */
+  padding: 10px 20px; /* Vienmērīgs iekšējais attālums */
+  text-align: center;
+}
+
+/* Specifiski "Individuālā tēma" pogai */
+.w3-bar .ind-poga {
+  width: auto; /* Tāds pats platums kā citām pogām */
+}
+
+/* Navigācijas pogas, kad peles kursors ir virs tām */
+.w3-bar .w3-button:hover {
+  background-color: #f1f1f1; /* Gaiši pelēks efekts peles uzbraukšanai */
+}
+
+/* Attēlu stilizācija */
+.w3-image {
+  max-width: 100%;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+/* Sadaļas centrētas, lai saturs būtu harmoniski izvietots */
+.w3-content {
+  text-align: center;
+  padding: 20px;
+}
+
